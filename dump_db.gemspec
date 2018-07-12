@@ -6,12 +6,12 @@ require "dump_db/version"
 Gem::Specification.new do |spec|
   spec.name          = "dump_db"
   spec.version       = DumpDb::VERSION
-  spec.authors       = ["WJ"]
+  spec.authors       = ["JJ"]
   spec.email         = ["wangjing985@googlemail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Restore the backup database.}
+  spec.description   = %q{Backup and restore operations to the database.}
+  spec.homepage      = "https://github.com/virgil0116/dump_db."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

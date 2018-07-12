@@ -1,5 +1,26 @@
 # DumpDb
 
+```
+# Copy the data from the remote server
+scp name@ip:/data/backup/db/file ../
+
+# 备份
+pg_dump -U postgres -F t -f /vendemo.tar vendemo
+
+# 恢复
+pg_restore -U postgres -d bk01 /vendemo.tar 
+
+
+```
+
+```
+# 正式系统
+# 备份
+/bin/bash -l -c "PGPASSWORD=Gx2018Data pg_dump -U gxzypg kanban_pro | gzip > /data/backup/db/kanban/kanban-`date --date='0 days ago' +\%Y\%m\%d\%H\%M\%S`.psql.gz"
+
+```
+
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dump_db`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
