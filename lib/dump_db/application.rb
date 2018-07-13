@@ -1,0 +1,3 @@
+module DumpDb
+  
+end
